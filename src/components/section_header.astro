@@ -2,13 +2,11 @@
 import { Image } from "astro:assets";
 import Icon from "../../public/logotipo.webp";
 
-import Works from "./icons/works.svg";
+import { BriefcaseBusiness } from 'lucide-astro'
+import {Github} from 'lucide-astro'
+import {Twitter} from 'lucide-astro';
+import {Mail} from 'lucide-astro'
 
-import Twitter from "./icons/x.svg";
-
-import Github from "./icons/github.svg";
-
-import Mail from "./icons/mail.svg";
 ---
 
 <section
@@ -19,37 +17,37 @@ import Mail from "./icons/mail.svg";
       src={Icon}
       alt="Logo"
       width={75}
-      class="m-0.5 p-0.5 border-[1px] border-[#5c5763] flex flex-col justify-center items-center rounded-lg"
+      class="m-0.5 p-0.5 border-[1px] border-[#286983e7] flex flex-col justify-center items-center rounded-lg"
     />
   </div>
   <p class="m-2"></p>
   <div class="flex flex-row justify-between items-center">
     <h1 class="m-0.5 p-0.5 text-[#faf4ed] text-5xl font-bold">
-      H⟳la Mundo <span class="text-[#ea9d34]">Soy @jeanctech</span>
+      H๑la Mund» <span class="text-[#ea9d34] w-1/12px]">Soy @jeanctech</span>
     </h1>
   </div>
   <p class="m-2"></p>
   <div class="m-[1.5px] p-[1.5px] text-2xl font-500 text-[#faf4ed]">
     <p>
-      <span class="text-[#dd7878fb] font-medium">
-        +3 años de Experiencia de Desarrollo.
+      <span class="text-[#dd7878e7] font-medium">
+        Desarrollador Frontend & Aprendiz Curioso 🐧
       </span>
-      <span class="text-[#bb98e2ef] font-semibold">
-        Desarrollador Web y Frontend Junior.
-      </span>
-      <br />
-      <span class="text-[#2eacc2fa] font-semibold">
-        De Valle del Cauca, Colombia.
-      </span>
-      <span class="text-[#83d870ef] font-medium">
-        Especializado en Crear Aplicaciones Web Unicas.
+      <span class="text-[#bb98e2e7] font-semibold">
+        +3 años creando repos
       </span>
       <br />
-      <span class="text-[#f370ccf5] font-medium">
-        Desarrollador Apasionado en la Web.
+      <span class="text-[#2eacc2e7] font-semibold">
+        Con código • Fan de Rose Pine y Linux
       </span>
-      <span class="text-[#91c0c7f3] font-semibold">
-        En un Constante Proceso de Aprendizaje.
+      <span class="text-[#83d870e7] font-medium">
+       📍 Del Valle del Cauca, Colombia
+      </span>
+      <br />
+      <span class="text-[#f370cce7] font-medium">
+          Amante del terminal, y proyectos creativos
+      </span>
+      <span class="text-[#91c0c7e7] font-semibold">
+          👉 Explorando tecnologías <span class="text-[#232136]">˵˃ ᗜ ˂˵</span>
       </span>
     </p>
   </div>
@@ -63,12 +61,14 @@ import Mail from "./icons/mail.svg";
       class="m-3px] p-[1.5px] rounded-lg border-[1px] border-[#56526e] flex flex-row justify-center
       items-center hover:text-[#d1adfd]"
     >
+    <p class="m-[2px] p-[0px]"></p>
+    <BriefcaseBusiness />
       <a
         href="https://www.linkedin.com/in/jeanctech/"
         target="_blank"
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
-        ><Works />
+        >
         <span class="pl-1 mt-0.5">Disponible Para Trabajar</span></a
       >
     </button>
@@ -82,7 +82,7 @@ import Mail from "./icons/mail.svg";
         target="_blank"
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
-        ><Image src={Github} alt="Github-Logo" width={24} />
+        ><Github />
         <span class="pl-1 mt-0.5">Github</span></a
       >
     </button>
@@ -95,7 +95,7 @@ import Mail from "./icons/mail.svg";
         target="_blank"
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
-        ><Image src={Twitter} alt="Twitter-Logo" width={20} />
+        ><Twitter />
         <span class="pl-1 mt-0.5">Twitter</span></a
       >
     </button>

@@ -6,6 +6,7 @@
       "dependencies": {
         "@astrojs/check": "^0.9.4",
         "@astrojs/tailwind": "^6.0.2",
+        "lucide-astro": "^0.555.0",
         "onefetch": "^0.3.3",
         "sharp": "^0.34.3",
         "tailwind": "^4.0.0",
@@ -798,6 +799,8 @@
     "longest-streak": ["longest-streak@3.1.0", "", {}, "sha512-9Ri+o0JYgehTaVBBDoMqIl8GXtbWg711O3srftcHhZ0dqnETqLaoIK0x17fUw9rFSlK/0NlsKe0Ahhyl5pXE2g=="],
 
     "lru-cache": ["lru-cache@10.4.3", "", {}, "sha512-JNAzZcXrCt42VGLuYz0zfAzDfAvJWW6AfYlDBQyDV5DClI2m5sAmK+OIO7s59XfsRsWHp02jAJrRadPRGTt6SQ=="],
+
+    "lucide-astro": ["lucide-astro@0.555.0", "", { "peerDependencies": { "astro": ">=2.7.1" } }, "sha512-kQrDb/JOEd0hlEPPjAZpq8qIrdK6+Xq7aC0lpBU8pV1UhSuxdDGxMOVgOWUGXD6R7I++VppklK6r1wuaJjvXZA=="],
 
     "lusca": ["lusca@1.6.1", "", { "dependencies": { "tsscmp": "^1.0.5" } }, "sha512-+JzvUMH/rsE/4XfHdDOl70bip0beRcHSviYATQM0vtls59uVtdn1JMu4iD7ZShBpAmFG8EnaA+PrYG9sECMIOQ=="],
 
