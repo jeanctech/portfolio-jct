@@ -17,20 +17,20 @@ import {Mail} from 'lucide-astro'
       src={Icon}
       alt="Logo"
       width={75}
-      class="m-0.5 p-0.5 border-[1px] border-[#286983e7] flex flex-col justify-center items-center rounded-lg"
+      class="m-0.5 p-0.5 bg-slate-900 shadow-lg shadow-teal-300/50 flex flex-col justify-center items-center rounded-lg"
     />
   </div>
   <p class="m-2"></p>
   <div class="flex flex-row justify-between items-center">
     <h1 class="m-0.5 p-0.5 text-[#faf4ed] text-5xl font-bold">
-      H๑la Mund» <span class="text-[#ea9d34] w-1/12px]">Soy @jeanctech</span>
+      <span id='neon-text-one'>H๑la Mund»</span> <span class="text-[#ea9d34] w-1/12px]" id='neon-text-two'>Soy @jeanctech</span>
     </h1>
   </div>
   <p class="m-2"></p>
   <div class="m-[1.5px] p-[1.5px] text-2xl font-500 text-[#faf4ed]">
     <p>
       <span class="text-[#dd7878e7] font-medium">
-        Desarrollador Frontend & Aprendiz Curioso 🐧
+        Desarrollador Frontend & Aprendiz Curioso <span id="neon-text-tres">🐧</span>
       </span>
       <span class="text-[#bb98e2e7] font-semibold">
         +3 años creando repos
@@ -40,14 +40,14 @@ import {Mail} from 'lucide-astro'
         Con código • Fan de Rose Pine y Linux
       </span>
       <span class="text-[#83d870e7] font-medium">
-       📍 Del Valle del Cauca, Colombia
+       <span id="neon-text-tres">📍</span> Del Valle del Cauca, Colombia
       </span>
       <br />
       <span class="text-[#f370cce7] font-medium">
           Amante del terminal, y proyectos creativos
       </span>
       <span class="text-[#91c0c7e7] font-semibold">
-          👉 Explorando tecnologías <span class="text-[#232136]">˵˃ ᗜ ˂˵</span>
+          <span id="neon-text-tres">👉</span> Explorando tecnologías <span class="text-transparent">˵˃ ᗜ ˂˵</span>
       </span>
     </p>
   </div>
@@ -69,7 +69,7 @@ import {Mail} from 'lucide-astro'
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
         >
-        <span class="pl-1 mt-0.5">Disponible Para Trabajar</span></a
+        <span class="pl-1 mt-0.5" id='neon-text-cuatro'>Disponible Para Trabajar</span></a
       >
     </button>
     <p class="m-[2px] p-[0px]"></p>
@@ -83,7 +83,7 @@ import {Mail} from 'lucide-astro'
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
         ><Github />
-        <span class="pl-1 mt-0.5">Github</span></a
+        <span class="pl-1 mt-0.5" id='neon-text-cuatro'>Github</span></a
       >
     </button>
         <button
@@ -96,7 +96,7 @@ import {Mail} from 'lucide-astro'
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
         ><Twitter />
-        <span class="pl-1 mt-0.5">Twitter</span></a
+        <span class="pl-1 mt-0.5" id='neon-text-cuatro'>Twitter</span></a
       >
     </button>
     <button
@@ -109,10 +109,27 @@ import {Mail} from 'lucide-astro'
         rel="noopener noreferrer"
         class="m-0.5 p-0.5 flex flex-row"
         ><Mail />
-        <span class="pl-1 mt-0.5">Contacto</span></a
+        <span class="pl-1 mt-0.5" id='neon-text-cuatro'>Contacto</span></a
       >
     </button>
   </div>
 </section>
 
-<style></style>
+<style>
+    #neon-text-two {
+    color: #ebc792;
+    text-shadow: 0 0 5px #d4b87a, /* ... más sombras */ 0 0 40px #cc801d;
+  }
+    #neon-text-one {
+    color: #fff;
+    text-shadow: 0 0 5px #fff, /* ... más sombras */ 0 0 40px #ff00ff;
+  }
+   #neon-text-tres {
+    color: #718adb;
+    text-shadow: 0 0 5px #7c85b8, /* ... más sombras */ 0 0 40px #5875f5;
+  }
+     #neon-text-cuatro {
+    color: #f6f0f7;
+    text-shadow: 0 0 5px #a17291, /* ... más sombras */ 0 0 40px #a57ea5;
+  }
+</style>
